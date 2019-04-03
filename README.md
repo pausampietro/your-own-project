@@ -1,77 +1,53 @@
 
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# Welcome to Your Own Project!
+# Welcome to 'The Journalist'!
+
+## Repository content:
+
+1. Get&Export_RSS -> Gets the news of each RSS source separately and exports the content to a GoogleCloud Database
+2. Get&Export_Tweets -> Gets the 20 last tweets of each media and exports the content to a GoogleCloud Database
+3. Analysis_Twitter -> Imports all the stored tweets and performs analysis of polarity, subjectivity, number of likes, etc
+4. Analysis_RSS_vs_Twitter -> Gets matches between same news in RSS & Twitter and compare differences in terms of polarity, subjectivity...
+5. Analysis_Words -> Gets a dictionary with all the words used in news tweets and extract the best/worst words based on likes/retweets received
+
+________________________________________________________________________________________________________________________________
+
 
 ## Project Goals
-* Do the e2e analysis by your own.
-* Give some insights about a topic of your choice giving some arguments by:
-  * Being able to transmit the analysis in an ordered way.
-  * Using the statistical techniques learnt during the last weeks.
-  * Plotting the graphs in a useful way for the reader / listener. Yes, no additional rules Jordi.
-* Present your analysis in two ways and for two different audiencies:
-  * Technical audience: you will present a paper.
-  * Non tech audience: you will do a short presentation.
+* Compare Twitter versus Traditional News Media
+* Try to get insights about "how a New should be written" to get more audience/impact.
+
+## Sources
+* Twitter API
+* RSS of most relevant Traditional News Media 
+
+## Resources
+* Sentiment Analysis with python TextBlob / Vader
+* Jupyter notebook
+* Database
+
+## Some questions to answer...
+* How news on both media are written? (positive/negative/neutral language used)
+* How related are news on twitter (most popular info tweets) with news on TM? 
 
 
-## Deliverables
-* A notebook with your analysis in a paper way. Jupyter or Zeppelin are allowed.
-* A 3' presentation in the auditorium.
-* Repository with your workflow + documentation + code. Even if you are working alone, you need to keep good practices!
+## Analysis process
+* Obtain data from sources
+* Clean data if needed / translate tweets
+* Store data in a DB (Twitter free API just let you obtain the 20 last tweets from each user)
+* Analize data in terms of: sentiment, polarity, subjectivity, lenght, audience.
+* Compare audience with popularity
+* Try to establish some relations, regressions between variables, etc.
+* Plot results
 
-## The presentation
-* In the auditorium.
-* 3 minutes talk, 2 minutes questions. No more. Yeah, exactly.
-* The audience will evaluate their understanding on your presentation (this will help you in further presentations).
-
-## General schedule
-*Today*
-* Think on a topic and propose some questions. 
-* Choose the data interesting. 
-* Look for documentation to give context to your project.
-* Write the README file in your repository.
-
-*Tuesday*
-* Teachers validation --NO CODE UNTIL HERE--
-
-*Tuesday-Wednesday*
-* Start importing the data and cleaning it.
-* Start the analysis. Remember all the techniques you have learnt.
-* Prepare a draft of your first slides presentation (no analysis or conclusions yet): title, motivation, context, ...
-
-*Thursday*
-* First rehearshall. Take the feedback and use it!
-
-*Thursday - Next Tuesday*
-* Finish the analysis. Finish the slides.
-
-*Tuesday*
-* General rehearshall.
-
-*Tuesday - Wednesday*
-* Last improvements.
-
-*Wednesday*
-* Presentation!
-
-## General advices
-* Organize yourself (don't get lost!).
-* Ask for help vs Google is your friend.
-* Define a simple approach first. You never know how the data can betray you ;)
-* Documentate yourself. Know about the problem. Look for some analysis that someone did before you.
-* You *can* use the projects your partners did in the last week. You can't use your own project.
-* Before doing a graph, think what you want to represent.
-
-## Some inspiration
-[Explore the Google Trends](http://pages.today/trends4)
-
-[Hans Roslings's vizs](http://b.link/ted52)
-
-[See an analysis about heart diseases](http://b.link/kaggle10)
-
-[Your body's data](http://body.media/ted6)
+## Conventions
+* snake_case
+* clean code / version control with gitKraken
+* libraries if needed
 
 
 
 
 
+ 
